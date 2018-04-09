@@ -4,16 +4,16 @@ using UnityEngine;
 
 public class Character : MonoBehaviour {
 
-	private List<Buff> buffs = new List<>();
+	private List<Buff> buffs = new List<Buff>();
 
 	// Basic
 	private double health;
 	private double tp;
 	private double agility;
 	private int cardDrawQuantity;
-	private List<Skill> skills = new List<>();
-	private List<Card> cards = new List<>();
-	private List<Item> items = new List<>();
+	private List<Skill> skills = new List<Skill>();
+	private List<Card> cards = new List<Card>();
+	private List<Item> items = new List<Item>();
 
 	// Getters
 	public double getHealth() { return health;}
@@ -21,15 +21,14 @@ public class Character : MonoBehaviour {
 	public double getAgility() { return agility;}
 	public int getCardDrawQuantity() { return cardDrawQuantity;}
 	public List<Skill> getSkills() { return skills;}
-	public List<Buff> getSkills() { return buffs;}
-	public List<Card> getSkills() { return cards;}
+	public List<Card> getCards() { return cards;}
 	public List<Buff> getBuffs() { return buffs;}
 
 	// Setters
-	public double setHealth(double health) { this.health = health;}
-	public double setTp(double tp) { this.tp = tp;}
-	public double setAgility(double agility) { this.agility = agility;}
-	public int setCardDrawQuantity(int cardDrawQuantity) { this.cardDrawQuantity = cardDrawQuantity;}
+	public void setHealth(double health) { this.health = health;}
+	public void setTp(double tp) { this.tp = tp;}
+	public void setAgility(double agility) { this.agility = agility;}
+	public void setCardDrawQuantity(int cardDrawQuantity) { this.cardDrawQuantity = cardDrawQuantity;}
 
 	// Use this for initialization
 	void Start () {
